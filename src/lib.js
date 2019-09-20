@@ -76,7 +76,6 @@ function afterCancel(his){
 
 function pushState(id){
     history.pushState('B-' + index, id, '');
-    history.pushState('B-' + (index+1), id, '');
     activeState = 'B-' + (index + 1);
 
     index = index==1 ? 3 : 1;
